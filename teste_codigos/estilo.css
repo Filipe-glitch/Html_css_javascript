@@ -1,0 +1,15 @@
+
+        h1.supertitulo{color: blueviolet;font-size: 12px;}
+        .supertitulo{color: aliceblue;font-size: 50px;}
+        #principaltitulo{color: black;font-size: 90px;}
+        p{color: aqua;font-size: 12px;}
+        .fim li{color:cadetblue;font-size: 64px;}
+        #div1 p{color: brown;font-size: 45px;;} /* aqui colocamos todos
+        inclusive filhos e netos. se fosse o #div1>p... seria os filhos e
+        sem os netos(subdivisões do div1, no caso o <div> */
+        #part1+p{color: beige;font-size: 65px;} /* aqui temos o caso 1
+        que faz com que o irmão posterior a ele seja afetado pela cor,
+        caso fosse #part1{...} seria todos os irmãos tirando os netos(
+        mesma div) */
+        #div4 p:hover{color: rgba(32, 60, 151, 0.774);}
+
