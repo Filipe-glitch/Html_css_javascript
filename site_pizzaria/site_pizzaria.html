@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Leandro</title>
+</head>
+<body>
+    <h1> <em>Pedido pizza</em></Pedido></h1>
+    <form method="GET" action="pizzaria.jsp">
+    Nome: <input type="text" name="nome"> <br>
+    Email: <input type="text" name="email"> <br>
+    Tamanho:
+    <input type="radio" name="tamanho" value="G"> Grande
+    <input type="radio" name="tamanho" value="M" checked > Média
+    <input type="radio" name="tamanho" value="P"> Pequena
+    <br>
+    Sabor: <select name="sabor">
+          <option>Calabresa</option>
+          <option>marguerita</option>
+          <option>Napolitana</option>
+          <option>Doce</option>
+          </select>
+          <br>
+          Adicionais: 
+          <input type ="checkbox" name="borda" value="sim"> Borda
+          <input type ="checkbox" name="queijo" value="sim"> Queijo
+          <br>
+          Refrigerante:<select name="refrigerante">
+            <option>Coca-cola</option>
+            <option>Fanta-uva</option>
+            <option>Fanta-laranja</option>
+            <option>Guaraná Antartica</option>
+            </select>
+            <br>
+            Data Entrega: <input type="date" name="data entrega">
+            <br>
+            Comentário: <textarea name="mensagem" rows="10" cols="30"></textarea>
+            <br><input type="submit">
+    </form>      
+    <img src="pizza.png" alt="pizza" width="650">
+</body>
+</html>
