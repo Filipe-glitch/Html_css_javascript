@@ -1,0 +1,14 @@
+.futebol{
+background: url(futebol.webp) no-repeat;
+display: block;/*força a imagem a aparecer na tela*/
+background-size: contain; /*força a imagem a aparecer toda na tela e em um tamanho ideal
+width: 400px;
+height: 400px;
+}
+.futebol:hover{
+    background-position: 0px -330px; /* faz a imagem se mexer para baixo, para cima , esquerda e direita*/
+}
+.futebol:active{
+    background-position: 20px 220px;
+    /*esse faz a imagem se mexer para os lados após o click*/
+}
