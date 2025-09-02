@@ -1,3 +1,5 @@
+//exercicio : criar um botão cujo azul; assim que eu colocar o mouse sobre ele, ele ficar verde. e caso clicar 10 vezes, ele ficará vermelho exibindo a mensagem quebrei
+
 let botao = document.querySelector("#botao"); //sempre colocar entre parenteses e aspas, não esquecer do # antes do nome da id.
 botao.style.background="blue";
 let quebrei = false;
@@ -24,5 +26,3 @@ botao.addEventListener("click",e => {
     quebrei = true;
     }}
 )
-
-//exercicio : criar um botão cujo azul; assim que eu colocar o mouse sobre ele, ele ficar verde. e caso clicar 10 vezes, ele ficará vermelho exibindo a mensagem quebrei

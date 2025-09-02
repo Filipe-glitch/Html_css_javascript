@@ -12,4 +12,21 @@
         caso fosse #part1{...} seria todos os irmãos tirando os netos(
         mesma div) */
         #div4 p:hover{color: rgba(32, 60, 151, 0.774);}
+        .alternada{
+    list-style: upper-alpha;
+    font-size: 30px;
+    color:indigo;
+    width: fit-content;
+}
+.alternada li:nth-child(odd){
+background-color: blueviolet;
+} /*esse comando é pra vc selecionar um filho especifico */
+/* quero um comando que faça os itens pares diferentes dos impares, marcadores.*/
+
+.alternada li:nth-child(even){
+background-color: aqua;}
+
+.alternada li:hover{
+    font-weight: bolder;
+}
 

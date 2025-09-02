@@ -1,4 +1,7 @@
-.quadrado{
+/* a page on which there are several squares
+of different colors occupying the four corners
+of the screen */
+.square{
 border: 3px solid black;
 width: 85px;
 height: 60px;
@@ -6,20 +9,20 @@ margin: 40px;
 background-color: floralwhite;
 }
 
-.quadrado2{
+.square2{
 position: absolute;
 right:0px;
 top:0px;
 background-color: brown;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.quadrado3{
+.square3{
 position: absolute;
 right: 0px;
 bottom: 0px;
 background-color: antiquewhite;
 }
-.quadrado4{
+.square4{
 position: absolute;
 left:7px;
 bottom:0px;
@@ -27,6 +30,3 @@ background-color: black;
 color: blueviolet
 ;
 }
-/* página na qual existam vários quadrados 
-de cores distintas ocupando os quatro cantos
-da tela */
