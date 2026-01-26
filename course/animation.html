@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        #mydiv{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 4s;
+        }
+        @keyframes example{
+            from {background-color: red;}
+            to {background-color: blue;}
+        }
+        #mydiv2{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            animation-name: example2;
+            animation-duration: 4s;
+        }
+        @keyframes example2{
+            0% {background-color: red;}
+            25% {background-color: aqua;}
+            50% {background-color: green;}
+            100% {background-color: violet;}
+        }
+        #mydiv3{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            position: relative;
+            animation-name: example3;
+            animation-duration: 4s;
+            animation-delay: 4s;
+            animation-iteration-count: 5;
+            animation-direction: alternate;
+        }
+        @keyframes example3{
+            0% {background-color: red; left: 0px; top: 0px;}
+            25% {background-color: yellow; left: 200px; top: 0px;}
+            50% {background-color: blue; left: 200px; top: 200px;}
+            75% {background-color: green; left: 0px; top: 200px;}
+            100% {background-color: red; left: 0px; top: 0px;}
+        }
+        div{
+            width: 300px;
+            height: 100px;
+            background-color: pink;
+            border: 1px solid black;
+        }
+        #mydiv4{
+            transform: rotateY(150deg);
+        }
+        #mydiv5{
+            transform: skewX(20deg);
+        }
+    </style>
+    <!-- animation delay é o 'atraso' para a animação começar. iteration-count é a quantidade de vezes que a animação irá repetir. direction é uma mudança de direção com reverse sendo o oposto do definido e alternative sendo um reverse + 1 definido normal. from é como está no começo e to é o que vai se tornar. @keyframes vc cria as regras da animação. transform é usado. transform: aplicar transformações visuais em elementos, como: mover, girar, inclinar, aumentar/diminuir.-->
+</head>
+<body>
+    <div id="mydiv"></div>
+    <div id="mydiv2"></div>
+    <div id="mydiv3"></div>
+    <div> This is box 1 </div>
+    <div id="mydiv4"> box 2.rotateYgira no espaço 3D, como virar uma carta de baralho </div>
+    <div id="mydiv5"> box3 skewX,distorce/inclina o quadrado, puxando os cantos para o lado. </div>
+</body>
+</html>

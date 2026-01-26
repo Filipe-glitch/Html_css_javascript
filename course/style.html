@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS examples</title>
+    <style type="text/css"> /* tem que ser exatamente esse text/css para funcionar*/
+        h2{
+color: aquamarine;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+text-decoration: underline;
+        }
+        a {
+            text-decoration: none; /* Remove o sublinhado padrão dos links.*/
+        }
+        a:link {color:blueviolet} /*link normal, nunca visitado.*/
+        a:visited{color:blue}/* link já visitado.*/
+        a:hover{color: aqua;}/*quando o mouse passa por cima*/
+        a:active{color:black}/*quando você clica e segura.*/
+    </style>
+</head>
+<body>
+    <h1 style="color: blue;"> Course CSS</h1>
+    <h2> welcome to the course</h2>
+    <h3> CSS </h3>
+    <p> <a href="#r2">clique aqui para ir até a imagem</a></p>
+    <p> <a href="#r1"> temos um exemplo da locomoção na página, colocamos o a href = '#r1' para poder colocar o link de onde clicar para ser transferido para aquele local da página</a></p>
+    <!-- aqui temos o exemplo de como usar as tags style-->
+    <a href="https://www.udemy.com"> CLICK HERE FOR UDEMY SITE<br></a>
+    <a href="test.html"> outro arquivo Html <br></a>
+    <a href="https://chatgpt.com" target="_blank"> clique aqui para ir ao chat gpt</a>
+    <!-- target="..." define onde a página de destino será aberta. blank abre em outra guia, self abre na mesma aba/janela. parent : Abre o link no quadro-pai (usado quando há iframes ou frames). _top: Abre o link na janela completa, ignorando qualquer iframe/frame em que a página esteja. -->
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora recusandae reprehenderit harum est officiis totam magnam modi odit qui accusantium libero corporis, consequuntur similique? Eligendi delectus eius veniam vitae culpa!</p>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ex distinctio rem magnam ea qui adipisci animi perferendis optio eos dignissimos illo, eius neque dicta porro laborum minus, repellat blanditiis.</p>
+    <p id="r1"> aqui temos um exemplo de ID que está sendo usada para se locomover pela própria página a partir de um clique em um local especifico. definimos id= 'r1' dentro do p </p>
+    <p id="r2"><img src="teste.jpg" height="400" width="400"> <br></p>
+    <img src="terti.svg" height="400" width="400">
+
+    <ul type="circle"> <!-- type definido como quadrado ao invés do circulo padrão. None,circle etc -->
+        <li>Orange</li>
+        <li>Kiwi</li>
+        <li>Apple</li>
+    </ul>
+    <ol type="A"> <!-- esse é usado para indicar contagem com números ou letras-->
+        <li>Tiger</li>
+        <li>Bird</li>
+        <li>cat</li>
+    </ol>
+    <table border="2" cellpadding="7">
+        <caption> Aqui o título da minha tabela </caption>
+        <tr> <th>Nomes</th> <th>Estado</th> <th>salários</th></tr>
+        <tr> <td>Rafael</td> <td>Santa Catariná</td> <td> R$4500,00</td></tr>
+        <tr> <td>Noruel</td> <td>Pará</td> <td>R$1452,00</td></tr>
+        <!-- tr representa uma linha na tabela, th representa o titulo, e td representa uma celula de dados comuns na tabela. colspan: Faz uma célula ocupar várias colunas na mesma linha. rowspan: Faz uma célula ocupar várias linhas na mesma coluna.-->
+    </table>
+    <table border="3" cellpadding="6">
+        <caption> Preços de ações </caption>
+        <tr> <th colspan="3">Ações</th><th>valor </th></tr>
+        <tr> <td> BGS</td> <td> PAFG</td> <td>TR</td> <td> R$0,15</td></tr>
+        <tr> <td> SDE</td><td> FRE</td><td> FED</td><td>R$0,5151</td></tr>
+    </table>
+    <table border="3" cellpadding="6">
+        <caption>titulo</caption>
+        <tr><td rowspan="2"> roupa </td> <td> cell</td></tr>
+        <tr> <td> fone</td></tr>
+        <tr> <td> fone2</td></tr>
+        <tr> <td> fone3</td></tr>
+    </table>
+    <iframe src="https://soulwings.thatskygame.com/en" width="75%" height="400px"></iframe>
+    <p>Trademark &copy;&hearts; &reg; &square;</p>
+</body>
+</html>

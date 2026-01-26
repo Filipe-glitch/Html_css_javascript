@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Códigos CSS</title>
+</head>
+<body>
+    <p style="font-family: 'Courier New', Courier, monospace;"> define qual fonte usar</p>
+    <p style="font-style: italic;"> estilo da fonte</p>
+    <p style="font-variant: small-caps;"> controla variações tipográficas especiais (como versalete) </p>
+    <p style="font-weight: bold;"> aqui temos a espessura da fonte, fina ou grossa.</p>
+    <p style="font-size: 40px;"> tamanho da fonte</p>
+    <p style="font: italic small-caps bold 15px georgia"> exemplo de vários com resumo</p>
+    <p style="color: blueviolet;"> define a cor das letras</p>
+    <p style="direction: rtl;"> parágrafo direita para esquerda</p>
+    <p style="letter-spacing: 5px;"> espaçamento entre as letras </p>
+    <p style="word-spacing: 5px;"> espaçamento entre as palavras</p>
+    <p style="text-indent: 1cm;"> paragráfo com texto recuado 1cm</p>
+    <p style="text-decoration: underline;"> text decoration serve para adicionar efeitos visuais ao texto, como sublinhado, linha acima.</p>
+    <p style="text-decoration: overline;"> o texto ficará com traço encima</p>
+    <p style="text-decoration: line-through;"> o texto ficará riscado </p>
+    <p style="text-decoration: blink;"> aqui  </p>
+    <p style="text-transform: uppercase;"> serão todas maiuscúlas</p>
+    <p style="text-transform: lowercase;"> SERão minusculas</p>
+    <p style="text-transform: capitalize;">a primeira letra de cada palavra fica maiúscula.</p>
+    <p style="text-shadow: 6px 4px blue;"> adiciona sombra ao texto, 6px é o deslocamento horizontal da sombra(vai para direita),4px é o deslocamento vertical da sombra(vai para baixo) e azul é a cor da sombra</p>
+    <p style="text-shadow: 2px 2px 5px black, -2px -2px 5px gray;"> outro exemplo de sombra</p>
+    <!-- aqui embaixo um exemplo de camadas-->
+    <div style="background-color: green; width: 300px; height: 100px; position: absolute; top: 0px; right: 50px; z-index: 1;"></div>
+    <div style="background-color: purple; width: 300px; height: 100px; position: absolute; top: 0px; right: 160px; z-index: 2;"></div>
+    <div style="background-color: red; width: 250px; height: 50px; position: absolute; top: 20px; right: 120px; z-index: 3;"></div> 
+    <!--z-index controla a ondem das camadas, Quanto maior o valor, mais na frente,ele aparece-->
+    <!-- position: absolute: Faz com que o elemento saia do fluxo normal da página e seja posicionado de forma absoluta em relação ao primeiro ancestral que tiver position: relative;.Se nenhum ancestral tiver position: relative;, ele é posicionado em relação à janela do navegador (viewport). widht e height são o tamanho do meu poligono. right: o elemento fica afastado 50px da borda direita.-->
+    <ul>
+        <li style="float: left;width: 16%;"> Fisica</li>
+        <li style="float: left;width: 16%;"> matematica</li>
+        <li style="float: left;width: 16%;"> quimica</li>
+    </ul>
+    <p>&ecaron;</p>
+    <ol>
+        <li style="list-style-type: circle;">teste</li>
+        <li style="list-style-type: circle;">teste2</li>
+    </ol>
+</body>
+</html>
