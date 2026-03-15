@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Exemplo Overflow</title>
+
+<style>
+.container {
+    width: 300px;
+    height: 120px;
+    border: 3px solid #3f21ad;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.visible {
+    overflow: visible;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.scroll {
+    overflow: scroll;
+}
+
+.auto {
+    overflow: auto;
+}
+</style>
+</head>
+
+<body>
+
+<h2>overflow: visible (padrão)</h2>
+<div class="container visible">
+    Este texto é grande demais para a caixa. Ele vai ultrapassar o limite do container porque o overflow está como visible.
+</div>
+
+<h2>overflow: hidden</h2>
+<div class="container hidden">
+    Este texto é grande demais para a caixa. Ele será cortado porque o overflow está como hidden.
+</div>
+
+<h2>overflow: scroll</h2>
+<div class="container scroll">
+    Este texto é grande demais para a caixa. Sempre aparecerá barra de rolagem.
+</div>
+
+<h2>overflow: auto</h2>
+<div class="container auto">
+    Este texto é grande demais para a caixa. A barra de rolagem só aparece se for necessário.
+</div>
+
+</body>
+</html>

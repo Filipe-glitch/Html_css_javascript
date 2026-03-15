@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>faculdade</title>
+    <style>
+        body{
+            background-image: url("teste.jpg");
+            background-repeat: repeat-y;
+        }
+        img{
+            float: right;
+        }
+        container {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 10px;
+        }
+        container2 {
+            display: flex;
+            justify-content: center;  /* eixo horizontal */
+            align-items: center;      /* eixo vertical */
+        } 
+
+
+    </style>
+</head>
+<body>
+    <h1>título</h1>
+    <p>teste</p>
+    <p>nesse próximo teremos a imagem java</p>
+    <p> <img src="terti.svg" style="width: 170px; height: 170px; margin-left: 20px;"> imagem exemplar</p>
+    <div class="container">
+      <div>Header</div>
+      <div>Menu</div>
+      <div>Conteúdo</div>
+      <div>Footer</div>
+    </div>
+    <div class="container2">
+      <div>Item 1</div>
+      <div>Item 2</div>
+      <div>Item 3</div>
+    </div>
+</body>
+</html>

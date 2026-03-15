@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>novo exemplo grid</title>
+    <style>
+        .container {
+ display: grid;
+ grid-template-rows: 60px 40px 200px 60px;
+ grid-template-areas: 
+ "topo topo topo"
+ "menu menu menu"
+ "esquerda principal direita"
+ "rodape rodape rodape";
+ grid-gap: 5px 10px;
+}
+.topo {grid-area: topo;}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+ <header class="topo">Topo</header>
+ <nav class="menu">Menu</nav>
+ <main class="principal">Principal</main>
+ <aside class="esquerda">aside esquerdo</aside>
+ <aside class="direita">aside direito</aside>
+ <footer class="rodape">Rodapé</footer>
+</div>
+</body>
+</html>

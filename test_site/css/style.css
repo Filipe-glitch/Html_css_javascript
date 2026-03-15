@@ -1,0 +1,100 @@
+/* Limpar formatações */
+*{
+    margin: 0;
+    padding: 0;
+}
+/*  Header */
+#header{
+    background-color: blue;
+    padding: 15px;
+    text-align: center;
+}
+#logo, #menu{
+    padding: 10px;
+}
+#header a:link, #header a:visited{
+    color: #FFFFFF;
+    padding: 8px, 12px;
+}
+#header a:hover{
+    color:black;
+    background: aliceblue;
+    text-decoration: none;
+}
+.white{
+    color: bisque;
+}
+/*content */
+#content{
+    width: 920px;
+    margin: 0 auto;
+    padding: 15px;
+}
+#post{
+    width: 660px;
+    float: left;
+}
+.post{
+    padding: 20px;
+    background: #FFFFFF;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.data-post{
+    font-size: 13px;
+    border-bottom: 1px solid #0066CC;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+/*right-side*/
+#right-side{
+    width: 240px;
+    float: right;
+}
+.content-right{
+    background: #FFFFFF;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.post-right{
+    font-size: 13px;
+    padding: 5px;
+    border-radius: 1px dotted #CCCCCC;
+}
+/* links */
+a{
+    text-decoration: none;
+}
+a:link, a:visited{
+    color: antiquewhite;
+}
+a:hover{
+    text-decoration: underline;
+}
+/* footer */
+#footer{
+    clear:both;
+    text-align: center;
+    padding: 15px;
+    background: #FFFFFF;
+    color: #0066CC;
+}
+/* formtações genéricas */
+body{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #C4C4C4;
+}
+h1{
+    color: #252525;
+    font-size: 48px;
+}
+h2{
+    color: #373737;
+}
+h3{
+    color: #535353;
+    background: #CCCCCC;
+    padding: 5px;
+}

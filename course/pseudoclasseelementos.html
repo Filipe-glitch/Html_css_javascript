@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudoclasse </title>
+    <style>
+        a.estilo1:link{color: blue;}
+        a.estilo1:visited{color: burlywood;}
+        a.estilo1:hover{color: aquamarine;}
+
+        a.estilo2:link{color:blue}
+        a.estilo2:visited{color: burlywood;}
+        a.estilo2:hover{font-size: 150%;}
+
+        a.estilo3:link{color: blue;}
+        a.estilo3:visited{color: burlywood;}
+        a.estilo3:hover{background-color: grey;}
+
+        h1::after{
+            content: url(https://fvsch.com/articles/css-content-image/star.png);
+        }
+        p::first-letter{
+            font-size: xx-large;
+            color: blue;
+        }
+        ::marker{
+            color: red;
+            font-size: 23px;
+        }
+        ::selection{
+            color: black;
+            background: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <p>passe o mouse para ver as mudanças nos links</p>
+    <p>
+        <a class="estilo1" href="#">aqui irá mudar de cor</a><br>
+        <a class="estilo2" href="#"> aqui muda o tamanhos das letras</a><br>
+        <a class="estilo3" href="#"> muda a cor do fundo</a>
+    </p>
+    <h1>aqui temos o titulo</h1>
+    <p>o exemplo do pseudoelemento ::before que insere o conteúdo antes do conteúdo de um elemento</p>
+    
+    <ul>
+        <li>café</li>
+        <li>fermento</li>
+        <li>Água</li>
+    </ul>
+    <ol>
+        <li>primeiro</li>
+        <li>segundo</li>
+        <li>terceiro</li>
+    </ol>
+</body>
+</html>

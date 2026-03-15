@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaŕios</title>
+</head>
+<body>
+ <form>
+  <input type="text" name="Nome:" placeholder="Digite o nome" size="40" maxlength="40">
+
+  <fieldset>
+    <legend>Sua melhor linguagem de programação</legend>
+    <label>
+      <input type="radio" name="linguagem" value="java">
+      Java
+    </label>
+    <br>
+
+    <label>
+      <input type="radio" name="linguagem" value="javascript">
+      JavaScript
+    </label>
+    <br>
+
+    <label>
+      <input type="radio" name="linguagem" value="csharp">
+      C#
+    </label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Linguagens de programação que você domina</legend>
+    <label>
+        <input type="checkbox" name="Linguagens" value="csharp">
+        C#
+    </label>
+    <label>
+        <input type="checkbox" name="Linguagens" value="JavaScript">
+        JavaScript
+    </label>
+    <label>
+        <input type="checkbox" name="Linguagens" value="Python">
+        Python
+    </label>
+  </fieldset>
+
+  <label for="pais">País</label>
+  <select id="pais" name="pais">
+    <option>Brasil</option>
+    <option>Japão</option>
+    <option>Alemanha</option>
+  </select>
+  
+  <fieldset>
+  <legend>Localização</legend>
+
+  <label for="estado">Estado</label>
+  <select id="estado" name="estado">
+    <option>RJ</option>
+    <option>SP</option>
+  </select>
+  </fieldset>
+
+  <fieldset>
+    <legend>Contato</legend>
+
+    <label for="mensagem">Sua mensagem</label>
+    <textarea id="mensagem" name="mensagem"></textarea>
+  </fieldset>
+
+  <textarea name="opiniao" rows="5" cols="40">Digite aqui sua msg...</textarea>
+
+ <button type="submit">Enviar</button>
+ <input name="Submit" type="submit" id="Submit" value="Enviar">
+ </form>
+</body>
+</html>

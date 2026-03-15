@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  display: grid;
+  grid-template-columns: 200px minmax(400px, 800px);
+  grid-template-rows: 50px minmax(200px, auto) 50px;
+  gap: 10px;
+  height: 80vh;
+}
+
+.box {
+  background: #0a7a4f;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="box">Header</div>
+  <div class="box">Header 2</div>
+
+  <div class="box">Sidebar</div>
+  <div class="box">
+    Conteúdo grande aqui para testar o minmax.
+    Aumente e diminua a tela para ver o efeito.
+  </div>
+
+  <div class="box">Footer</div>
+  <div class="box">Footer 2</div>
+</div>
+
+</body>
+</html>

@@ -1,10 +1,5 @@
-alert('hi'); /* Mostra uma caixinha de alerta, forma simples de interagir com o usuário.*/
+
 document.body.innerHTML =  'Bem vindo ao curso de JS';
-/* document: ele representa a página inteira carregada (DOM = Document Object Model).
-body: ele pega a parte <body> do HTML.
-innerHTML: é o conteúdo interno (HTML/texto) do elemento.
-Esse comanndo apaga tudo o que tem dentro do <body> e coloca no lugar apenas o texto escrito aqui. */
-4 * 5, 45 / 5, 45 % 4, 77 - 8, (45 * 4) / 1, 48.4 * 2;
 Math.abs(-655); // transforma números negativos em inteiros
 Math.floor(89.4); //arredonda pra baixo, 89
 Math.ceil(89.4); //arredonda pra cima
@@ -35,25 +30,111 @@ Math.atan2(2, 2)//Retorna o ângulo em radianos entre o ponto (2, 2) e a origem 
 16 >>> 2 //deslocamento lógico à direita.
 //porcentagem que ser na mão : 10/100 = 10%
 
-'eleph' + 'ant1' + 15 //concatenação
-typeof 'fjdj' //typeof me diz o tipo de dado que estou colocando
-'R$' + 39
-'5' + 50 + 68 + 98 //sai 5506898
-45 + (45 + 98) // sai a soma
-//No JavaScript, quando você usa o operador + ,se ambos os lados forem números ele soma. Se um dos lados for string ele converte o outro em string e faz concatenação.
-'world'.charAt(1) //retorna o caractere na posição que vc definir começando pelo zero
-'world'.charCodeAt(1) //Retorna o código Unicode do caractere na posição que vc definir
-'HI'.concat('', 'there') //junta strings
-'HELLO'.endsWith() //verifica se a string termina com um trecho específico.
-'hello'.includes() //verifica se a string contém um trecho.
-'hello'.indexOf() //string.indexOf(searchValue, startIndex), searchValue: o que você está procurando. startIndex (opcional): de onde começa a busca (padrão é 0). 
-// "hello".indexOf("l", 3)   // 3  (começando do índice 3, acha o "l" em 3), se voltar -1 é pq não achou.
-'hii'.lastIndexOf() //procura a última ocorrência do trecho. string.lastIndexOf(searchValue, fromIndex), fromIndex (opcional): de onde começa a busca, mas olhando de trás pra frente.
-//"hello".lastIndexOf("l", 2)   // 2 (começa do índice 2 pra trás, acha "l" em 2)
-'hello'.match() //procura correspondências usando expressões regulares (regex). Se o regex não tiver a flag g (global), retorna só a primeira correspondência e informações extras. Se o regex tiver a flag g, retorna um array com todas as correspondências. Se não encontrar nada: retorna null. 
-"hello".match(/l/)       // [ "l", index: 2, input: "hello", ... ]
-"hello".match(/l/g)      // [ "l", "l" ]   (todas as ocorrências)
-'low'.repeat(5) //irá repetir a string 5 vezes
-'bpple'.replace('b', 'a') //substitui a primeira ocorrência
-'hello'.replaceAll('l', 'y') //substitui todas as ocorrências
-'heppppo'.search(/p/) //retorna o índice da primeira correspondência com uma expressão regular. se não encontrar nada ele retorna -1.
+let nome = "margatete";
+console.log(nome);
+nome = "erica";
+console.log(nome);//sairá erica 
+let altura;
+altura = 2.4;
+console.log(altura)
+"use strict";
+
+let altura2= 180;
+{
+ let peso= 70;
+ console.log(altura2); // -> 180
+ console.log(peso); // -> 70 
+}
+console.log(altura2); // -> 180
+// console.log(peso); // não tem, pois peso foi definido no bloco
+
+let a = 5;
+let b = 10;
+console.log(`resultado da operação é ${a + b}`);
+
+let str = "elephant is a big animal";
+let word = "hello";
+let greeting = "world";
+
+// métodos com strings
+console.log("charAt:", greeting.charAt(1)); 
+console.log("slice:", str.slice(0, 9)); 
+console.log("split:", str.split(" ")); 
+console.log("concatenação:", 'eleph' + 'ant1' + 15);
+console.log("typeof:", typeof 'fjdj');
+console.log("valor:", 'R$' + 39);
+console.log("charCodeAt:", greeting.charCodeAt(1)); // código ASCII
+console.log("concat:", 'HI'.concat(' ', 'there'));
+console.log("endsWith:", 'HELLO'.endsWith('O'));
+console.log("includes:", 'hello'.includes('ell'));
+console.log("indexOf:", 'hello'.indexOf('e'));
+console.log("lastIndexOf:", 'hii'.lastIndexOf('i'));
+console.log("match:", 'hello'.match(/l/));
+console.log("match global:", 'hello'.match(/l/g));
+console.log("repeat:", 'low'.repeat(5));
+console.log("replace:", 'bpple'.replace('b', 'a'));
+console.log("replaceAll:", 'hello'.replaceAll('l', 'y'));
+console.log("search:", 'heppppo'.search(/p/));
+
+// operadores 
+let x = 5;
+x += 2;
+console.log(x)
+let all = true && true;
+console.log(all)
+
+// alertas
+let nome2 = window.prompt("Qual seu nome?");
+alert(`olá, ${nome2}`);
+// window.alert('hi');
+
+// controle de fluxo
+let idade=3;
+if(idade<=11){
+   alert("Você ainda é uma criança");
+}
+else if(idade => 63){
+    alert("você é idoso")
+}
+else{
+    alert("você é jovem")
+}
+
+let estado = "SC";
+switch(estado){
+ case "RS":
+ alert("Rio Grande do Sul");
+ break;
+ case "SC":
+ alert("Santa Catarina");
+ break;
+ case "PR":
+ alert("Paraná");
+ break;
+ default:
+ alert("Não é um estado do sul");
+}
+
+// laços de repetição
+for (let i = 0; i < 10; i++) {
+ console.log(i);
+}
+
+let num = 0;
+while(num < 90) {
+ console.log(num);
+ num += 10;
+}
+
+let continua = false;
+let contador = 1;
+while (!continua) {continua = !confirm(`[${contador++}] Mais um loop?`);
+} // gera loops que só param se vc clicar na opção cancelar 
+let num2 = 0;
+
+do
+ {
+ console.log(num2);
+ num2 += 10;
+ }
+ while(num2<90)
