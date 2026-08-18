@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid - Grid Column e Grid Row</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 80px 200px 100px;
+            gap: 10px;
+            justify-items: stretch;
+            align-items: stretch;
+            height: 100vh;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .box {
+            background: #3f21ad;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .header { grid-column: 1 / 5; background-color: #1e105a; }
+        .sidebar { grid-row: 2 / 4; background-color: #2b177d; }
+        .content { grid-column: 2 / 4; background-color: #522bd8; }
+        .footer { grid-column: 1 / 5; background-color: #1e105a; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box header">HEADER (grid-column: 1 / 5)</div>
+        <div class="box sidebar">SIDEBAR (grid-row: 2 / 4)</div>
+        <div class="box content">CONTENT (grid-column: 2 / 4)</div>
+        <div class="box">Extra 1</div>
+        <div class="box footer">FOOTER (grid-column: 1 / 5)</div>
+    </div>
+</body>
+</html>

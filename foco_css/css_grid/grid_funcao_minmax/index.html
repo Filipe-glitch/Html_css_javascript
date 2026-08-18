@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid - Função minmax()</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 200px minmax(300px, 1fr);
+            grid-template-rows: 50px minmax(150px, auto) 50px;
+            gap: 10px;
+            height: 80vh;
+        }
+
+        .box {
+            background: #0a7a4f;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dimensões Flexíveis com <code>minmax()</code></h1>
+    <div class="container">
+        <div class="box">Header 1</div>
+        <div class="box">Header 2</div>
+
+        <div class="box">Sidebar</div>
+        <div class="box">
+            Conteúdo principal flexível com minmax(300px, 1fr).
+            Redimencione a janela do navegador para observar a coluna se ajustando entre 300px e o máximo disponível.
+        </div>
+
+        <div class="box">Footer 1</div>
+        <div class="box">Footer 2</div>
+    </div>
+</body>
+</html>

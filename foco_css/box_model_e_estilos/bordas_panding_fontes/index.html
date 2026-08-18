@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedades de Bordas e Box Model</title>
+    <style>
+        /* Estilos de borda */
+        p.dotted { border-style: dotted; }
+        p.dashed { border-style: dashed; }
+        p.solid  { border-style: solid; }
+        p.double { border-style: double; }
+        p.groove { border-style: groove; }
+        p.ridge  { border-style: ridge; }
+        p.inset  { border-style: inset; }
+        p.outset { border-style: outset; }
+        p.none   { border-style: none; }
+        p.hidden { border-style: hidden; }
+        p.mix    { border-style: dotted dashed solid double; }
+
+        /* Exemplo de Box Model */
+        .caixa-padrao {
+            border: 1px solid black;
+            padding: 50px;
+            background-color: green;
+            color: white;
+            text-align: center;
+            border-radius: 50px;
+            margin-bottom: 10px;
+        }
+
+        .caixa-um {
+            width: auto;
+            border: 1px solid black;
+            padding: 10px;
+            margin-bottom: 10px;
+        } 
+
+        .caixa-dois {
+            width: 200px;
+            height: 50px;
+            border: 1px solid black; 
+            padding: 10px;
+        }
+
+        .titulo-decorado {
+            box-sizing: border-box;
+            text-decoration: underline wavy;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Calibri', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h2>Propriedades de Estilos de Bordas</h2>
+    <p class="dotted">Borda pontilhada.</p>
+    <p class="dashed">Borda Tracejada.</p>
+    <p class="solid">Borda Sólida.</p>
+    <p class="double">Borda com linha dupla.</p>
+    <p class="groove">Borda com aparência entalhada.</p>
+    <p class="ridge">Borda com aparência de ressalto.</p>
+    <p class="inset">Borda em baixo-relevo.</p>
+    <p class="outset">Borda em alto-relevo.</p>
+    <p class="none">Sem borda (none).</p>
+    <p class="hidden">Borda oculta (hidden).</p>
+    <p class="mix">Borda misturada (diferente para cada lado).</p>
+
+    <h3>Exemplos de Padding e Dimensões</h3>
+    <div class="caixa-padrao">Conteúdo da div possui preenchimento de 50px dos quatro lados</div>
+    <div class="caixa-um">Largura automática (width: auto)</div>
+    <div class="caixa-dois">Largura fixa de 200px e altura de 50px</div>
+
+    <h4 class="titulo-decorado">Teste de fontes e decoração de texto</h4>
+</body>
+</html>

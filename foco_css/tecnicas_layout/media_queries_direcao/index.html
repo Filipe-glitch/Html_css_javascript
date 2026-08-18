@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries e Direção de Arte</title>
+    <style>
+        /* Troca de fundo do Body conforme a largura da tela */
+        @media screen and (min-width: 600px) {
+            body {
+                background-color: lightblue;
+            }
+        }
+
+        /* Direção de Arte em Imagens de Fundo */
+        .artdirection {
+            max-width: 100%; 
+            height: 240px; 
+            border: 5px solid red; 
+            background-image: url(terti.svg); 
+            background-position: top; 
+        } 
+
+        @media screen and (min-width: 320px) {
+            .artdirection {
+                border: 5px solid blue;
+                background-image: url(teste.jpg);
+                height: 525px;
+            }
+        }
+
+        @media screen and (min-width: 700px) {
+            .artdirection {
+                border: 5px solid green;
+                background-image: url(teste5.webp);
+                height: 750px;
+            } 
+        } 
+
+        @media screen and (min-width: 1600px) { 
+            .artdirection {
+                border: 5px solid black; 
+                background-image: url(teste4.webp);
+                max-width: 1600px;
+                height: 1200px; 
+            } 
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Media Queries</h1>
+    <p>Diminua ou aumente a janela para ver a cor de fundo e a imagem mudarem.</p>
+    
+    <div class="artdirection" aria-label="Exemplo de imagem responsiva"></div>
+</body>
+</html>

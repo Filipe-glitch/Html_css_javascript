@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Navegação Horizontal</title>
+    <style>
+        ul { 
+            list-style-type: none;
+            margin: 0; 
+            padding: 0; 
+            background-color: #f1f1f1; 
+            overflow: hidden; /* Limpa o float */
+        }
+        li {
+            float: left;
+        }
+        li a {
+            color: black;
+            display: block;
+            text-align: center;
+            padding: 14px 16px; 
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: #555; 
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Menu Horizontal (Estilo Float)</h1>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#noticias">Notícias</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Grid - Linhas de Início e Fim</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 100px 50px 80px 200px;
+            grid-template-rows: 80px 100px 100px;
+            gap: 8px;
+        }
+
+        .box {
+            background-color: #e0e0e0;
+            border: 1px solid #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .box1 {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            background-color: #3f21ad;
+            color: white;
+        }
+
+        .box2 {
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            background-color: #8b008b;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Posicionamento por Linhas Explicitas no Grid</h1>
+    <div class="container">
+        <div class="box box1">Box 1</div> 
+        <div class="box box2">Box 2</div> 
+    </div>
+</body>
+</html>

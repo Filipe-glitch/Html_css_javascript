@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Semânticas</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: center;
+        }
+        thead {
+            background-color: #f0f0f0;
+        }
+        tfoot {
+            background-color: #ddd;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas no HTML5</h1>
+
+    <!-- Tabela Semântica Profissional -->
+    <table>
+        <caption>Pontuação dos Alunos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Aluno</th>
+                <th scope="col">Matéria</th>
+                <th scope="col">Nota</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Filipe</td>
+                <td>Matemática</td>
+                <td>8.5</td>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>Português</td>
+                <td>9.0</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Média Geral</td>
+                <td>8.75</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Tabela com Mesclagem (Colspan e Rowspan) -->
+    <table>
+        <caption>Exemplo de Colspan e Rowspan</caption>
+        <tr>
+            <td colspan="2">Linha 1 (Colunas 1 e 2)</td>
+            <td rowspan="2">Coluna 3 (Linhas 1 e 2)</td>
+        </tr>
+        <tr>
+            <td>Linha 2, Célula 1</td>
+            <td>Linha 2, Célula 2</td>
+        </tr>
+    </table>
+
+    <!-- Tag Details/Summary -->
+    <details>
+        <summary>Ver mais informações sobre tabelas</summary>
+        <p>Use o atributo <code>scope="col"</code> ou <code>scope="row"</code> para melhorar a acessibilidade para leitores de tela.</p>
+    </details>
+</body>
+</html>

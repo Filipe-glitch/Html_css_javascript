@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipografia, Estilos de Texto e Sombras</title>
+    <style>
+        .fonte-familia { font-family: 'Courier New', Courier, monospace; }
+        .fonte-italico { font-style: italic; }
+        .fonte-versalete { font-variant: small-caps; }
+        .fonte-negrito { font-weight: bold; }
+        .fonte-tamanho { font-size: 40px; }
+        .fonte-shorthand { font: italic small-caps bold 15px Georgia, serif; }
+
+        .texto-cor { color: blueviolet; }
+        .texto-direcao { direction: rtl; }
+        .texto-letter-spacing { letter-spacing: 5px; }
+        .texto-word-spacing { word-spacing: 5px; }
+        .texto-recuo { text-indent: 1cm; }
+
+        .decoracao-sublinhado { text-decoration: underline; }
+        .decoracao-sobelinha { text-decoration: overline; }
+        .decoracao-riscado { text-decoration: line-through; }
+
+        .transform-maiuscula { text-transform: uppercase; }
+        .transform-minuscula { text-transform: lowercase; }
+        .transform-capitalizada { text-transform: capitalize; }
+
+        .sombra-simples { text-shadow: 6px 4px blue; }
+        .sombra-multipla { text-shadow: 2px 2px 5px black, -2px -2px 5px gray; }
+
+        /* Camadas com z-index */
+        .camada {
+            position: absolute;
+            top: 10px;
+        }
+        .camada-1 { background-color: green; width: 300px; height: 100px; right: 50px; z-index: 1; }
+        .camada-2 { background-color: purple; width: 300px; height: 100px; right: 160px; z-index: 2; }
+        .camada-3 { background-color: red; width: 250px; height: 50px; right: 120px; z-index: 3; }
+
+        /* Lista horizontal com Float */
+        .lista-float {
+            list-style: none;
+            padding: 0;
+            margin-top: 130px;
+        }
+        .lista-float li {
+            float: left;
+            width: 16%;
+        }
+
+        .lista-circulo {
+            list-style-type: circle;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedades de Fonte e Texto CSS</h1>
+
+    <p class="fonte-familia">font-family: Define a família da fonte.</p>
+    <p class="fonte-italico">font-style: Define o estilo da fonte (itálico).</p>
+    <p class="fonte-versalete">font-variant: Controla variações tipográficas (versalete/small-caps).</p>
+    <p class="fonte-negrito">font-weight: Controla a espessura da fonte (fina ou grossa).</p>
+    <p class="fonte-tamanho">font-size: Define o tamanho da fonte.</p>
+    <p class="fonte-shorthand">font: Resumo em uma única propriedade (style variant weight size family).</p>
+
+    <p class="texto-cor">color: Define a cor do texto.</p>
+    <p class="texto-direcao">direction: rtl (Alinha e escreve da direita para a esquerda).</p>
+    <p class="texto-letter-spacing">letter-spacing: Espaçamento entre letras.</p>
+    <p class="texto-word-spacing">word-spacing: Espaçamento entre palavras.</p>
+    <p class="texto-recuo">text-indent: Recuo da primeira linha do parágrafo.</p>
+
+    <p class="decoracao-sublinhado">text-decoration: underline (Sublinhado).</p>
+    <p class="decoracao-sobelinha">text-decoration: overline (Linha superior).</p>
+    <p class="decoracao-riscado">text-decoration: line-through (Texto riscado).</p>
+
+    <p class="transform-maiuscula">text-transform: uppercase (Todas maiúsculas).</p>
+    <p class="transform-minuscula">text-transform: lowercase (TODAS MINÚSCULAS).</p>
+    <p class="transform-capitalizada">text-transform: capitalize (Primeira letra de cada palavra maiúscula).</p>
+
+    <p class="sombra-simples">text-shadow: 6px 4px blue (Deslocamento X, Y e cor).</p>
+    <p class="sombra-multipla">text-shadow: Múltiplas sombras separadas por vírgula.</p>
+
+    <h2>Exemplo de Empilhamento (z-index)</h2>
+    <div class="camada camada-1"></div>
+    <div class="camada camada-2"></div>
+    <div class="camada camada-3"></div>
+
+    <ul class="lista-float">
+        <li>Física</li>
+        <li>Matemática</li>
+        <li>Química</li>
+    </ul>
+
+    <ol class="lista-circulo">
+        <li>Item com marcador circle</li>
+        <li>Item 2</li>
+    </ol>
+</body>
+</html>

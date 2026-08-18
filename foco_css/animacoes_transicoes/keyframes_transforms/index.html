@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes e Transforms 3D</title>
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            margin-bottom: 15px;
+        }
+
+        /* Animação Simples (from -> to) */
+        #div1 {
+            animation-name: animacao-simples;
+            animation-duration: 4s;
+        }
+        @keyframes animacao-simples {
+            from { background-color: red; }
+            to { background-color: blue; }
+        }
+
+        /* Animação com Etapas (%) */
+        #div2 {
+            animation-name: animacao-percentual;
+            animation-duration: 4s;
+        }
+        @keyframes animacao-percentual {
+            0% { background-color: red; }
+            25% { background-color: aqua; }
+            50% { background-color: green; }
+            100% { background-color: violet; }
+        }
+
+        /* Animação com Movimento, Delay e Repetição */
+        #div3 {
+            position: relative;
+            animation-name: animacao-percurso;
+            animation-duration: 4s;
+            animation-delay: 1s;
+            animation-iteration-count: 5;
+            animation-direction: alternate;
+        }
+        @keyframes animacao-percurso {
+            0%   { background-color: red; left: 0px; top: 0px; }
+            25%  { background-color: yellow; left: 200px; top: 0px; }
+            50%  { background-color: blue; left: 200px; top: 200px; }
+            75%  { background-color: green; left: 0px; top: 200px; }
+            100% { background-color: red; left: 0px; top: 0px; }
+        }
+
+        /* Transforms (3D e Distorção) */
+        .box-transform {
+            width: 300px;
+            height: 100px;
+            background-color: pink;
+            border: 1px solid black;
+            margin-top: 10px;
+        }
+        #div4 { transform: rotateY(150deg); }
+        #div5 { transform: skewX(20deg); }
+    </style>
+</head>
+<body>
+    <h1>Animações CSS com Keyframes</h1>
+    <div id="div1" class="box"></div>
+    <div id="div2" class="box"></div>
+    <div id="div3" class="box"></div>
+
+    <h2>Transformações 2D e 3D</h2>
+    <div class="box-transform">Caixa Padrão</div>
+    <div id="div4" class="box-transform">RotateY (Gira no eixo 3D)</div>
+    <div id="div5" class="box-transform">SkewX (Inclinado na horizontal)</div>
+</body>
+</html>
