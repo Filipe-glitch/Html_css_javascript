@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantidade de Homens e Mulheres</title>
+    <style>
+        table, th, td {
+            border: 1px solid #333;
+            border-collapse: collapse;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quantidade de homens e mulheres da turma</h1>
+
+    <form>
+        <label for="quantidade-homens">Quantidade de homens:</label>
+        <input type="number" id="quantidade-homens" min="0"><br><br>
+
+        <label for="quantidade-mulheres">Quantidade de mulheres:</label>
+        <input type="number" id="quantidade-mulheres" min="0"><br><br>
+
+        <button type="button" onclick="calcularPorcentagens()">Calcular</button>
+    </form>
+
+    <br>
+    <div id="tabela-porcentagens"></div>
+
+    <script>
+        function calcularPorcentagens() {
+            let quantidadeHomens = parseInt(document.getElementById("quantidade-homens").value) || 0;
+            let quantidadeMulheres = parseInt(document.getElementById("quantidade-mulheres").value) || 0;
+
+            let totalAlunos = quantidadeHomens + quantidadeMulheres;
+
+            if (totalAlunos === 0) {
+                document.getElementById("tabela-porcentagens").innerHTML = "<p>Informe valores maiores que zero.</p>";
+                return;
+            }
+
+            let percentualHomens = (quantidadeHomens / totalAlunos) * 100;
+            let percentualMulheres = (quantidadeMulheres / totalAlunos) * 100;
+
+            let tabela = `
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Gênero</th>
+                            <th>Quantidade</th>
+                            <th>Percentual</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Homens</td>
+                            <td>${quantidadeHomens}</td>
+                            <td>${percentualHomens.toFixed(2)}%</td>
+                        </tr>
+                        <tr>
+                            <td>Mulheres</td>
+                            <td>${quantidadeMulheres}</td>
+                            <td>${percentualMulheres.toFixed(2)}%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            `;
+
+            document.getElementById("tabela-porcentagens").innerHTML = tabela;
+        }
+    </script>
+</body>
+</html>

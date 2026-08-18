@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Armazenados</title>
+</head>
+<body>
+    <h1>Dados do Usuário</h1>
+
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" readonly><br><br>
+
+    <label for="cidade">Cidade:</label>
+    <input type="text" id="cidade" name="cidade" readonly>
+
+    <script>
+        window.onload = function() {
+            let nome = localStorage.getItem("nome") || "Não informado";
+            let cidade = localStorage.getItem("cidade") || "Não informado";
+
+            document.getElementById("nome").value = nome;
+            document.getElementById("cidade").value = cidade;
+        };
+    </script>
+</body>
+</html>

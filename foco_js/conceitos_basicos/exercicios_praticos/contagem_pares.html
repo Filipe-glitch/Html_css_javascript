@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem de Pares e Ímpares</title>
+</head>
+<body>
+    <h1>Verificação de Números Pares e Ímpares</h1>
+
+    <script>
+        let numeros = [];
+
+        for (let i = 0; i < 10; i++) {
+            let entrada = prompt(`Digite o ${i + 1}º número:`);
+            numeros.push(parseInt(entrada) || 0);
+        }
+
+        let pares = 0;
+        let impares = 0;
+
+        for (let i = 0; i < numeros.length; i++) {
+            if (numeros[i] % 2 === 0) {
+                pares++;
+            } 
+            else {
+                impares++;
+            }
+        }
+
+        console.log(`Quantidade de números pares: ${pares}`);
+        console.log(`Quantidade de números ímpares: ${impares}`);
+
+        alert(`Quantidade de números pares: ${pares}\nQuantidade de números ímpares: ${impares}`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listeners</title>
+</head>
+<body>
+    <h2>addEventListener e removeEventListener</h2>
+    <p>Podemos adicionar mais de um evento em elementos do DOM.</p>
+
+    <div id="div">Hello World</div><br>
+    <div id="myID">Minha Div</div><br>
+
+    <button onclick="trocarCorDiv()">Mudar Cor da Div</button><br><br>
+    <button onclick="removerEventoDiv()">Remover Evento do Hello World</button><br><br>
+    <button id="myBtn">Teste de Eventos Múltiplos</button><br><br>
+
+    <p id="teste"></p>
+
+    <script>
+        let botaoTeste = document.getElementById("myBtn");
+        let painelTeste = document.getElementById("teste");
+
+        if (botaoTeste && painelTeste) {
+            botaoTeste.addEventListener("mouseover", eventoMouseSobre);
+            botaoTeste.addEventListener("click", eventoClique);
+            botaoTeste.addEventListener("mouseout", eventoMouseFora);
+        }
+
+        function eventoMouseSobre() {
+            painelTeste.innerHTML += "Mouse sobre!<br>";
+        }
+
+        function eventoClique() {
+            painelTeste.innerHTML += "Clickado!<br>";
+        }
+
+        function eventoMouseFora() {
+            painelTeste.innerHTML += "Mouse fora!<br>";
+        }
+
+        let elementoDiv = document.getElementById('div');
+        if (elementoDiv) {
+            elementoDiv.addEventListener('click', eventoMudarCorGreen);
+        }
+
+        function eventoMudarCorGreen() {
+            elementoDiv.style.backgroundColor = 'green';
+        }
+
+        function removerEventoDiv() {
+            if (elementoDiv) {
+                elementoDiv.removeEventListener('click', eventoMudarCorGreen);
+            }
+        }
+
+        function trocarCorDiv() {
+            let elementoMyID = document.getElementById('myID');
+            if (elementoMyID) {
+                elementoMyID.style.backgroundColor = 'yellow';
+            }
+        }
+    </script>
+</body>
+</html>
