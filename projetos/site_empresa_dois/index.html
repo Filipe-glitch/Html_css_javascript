@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonte awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Site para empresa</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header style="background-image: url('assets/background-home.jpg');">
+        <div class="container">
+            <nav>
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="Logo">
+                </a>
+                <ul class="ul">
+                    <a href="index.html">Home</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="servicos.html">Serviços</a>
+                    <a class="btn" href="contato.html">Contato</a>
+                    <div class="close-icon" onclick="closeMenu()">
+                        <i class="fa fa-times-circle"></i>
+                    </div>
+                </ul>
+                <div class="menu-icon" onclick="openMenu()">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </nav>
+            <section class="banner">
+                <div class="banner-text">
+                    <h1>Whitespace</h1>
+                    <p>Construa sua marca, conquiste o mundo sem
+                        habilidades de código ou design necessárias</p>
+                    <a href="contato.html" class="btn animate-btn">Entrar em contato</a>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <!-- Faça mais-->
+    <section class="faca-mais">
+        <div class="container">
+            <div class="faca-mais-text">
+                <h3>Faça mais com whitepace</h3>
+                <p>
+                    Criação de websites, loja virtual, blogs para pequenas,
+                    médias e grande empresas ter um site online nunca foi tão fácil.
+                </p>
+                <a href="contato.html" class="btn animate-btn">Entrar em contato.</a>
+            </div>
+            <div class="faca-mais-img">
+                <img src="assets/img-1.png" alt="imagem do négocio">
+            </div>
+        </div>
+    </section>
+
+    <!-- Faça mais 2-->
+    <section class="faca-mais">
+        <div class="container">
+            <div class="faca-mais-img">
+                <img src="assets/img-2.png" alt="imagem do négocio">
+            </div>
+            <div class="faca-mais-text">
+                <h3>Ter um website nunca foi tão fácil</h3>
+                <p>
+                    Agora com a nossa empresa ter um website é algo fácil, basta entrar
+                    em contato e nós vamos desenvolver o seu website em tempo recorde
+                    para você começar e conquistar o mundo.
+                </p>
+                <a href="contato.html" class="btn">Entrar em contato.</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- depoimentos -->
+    <section class="depoimentos">
+        <div class="container">
+            <h3>Nossos Depoimentos</h3>
+            <p>Leia o que nossos clientes falam de nós.</p>
+            <div class="cards">
+                <!-- card item 1 -->
+                <div class="card-item">
+                    <img src="assets/pessoa_depoimento_um.jpg" alt="pessoa do depoimento">
+                    <p class="nome-user">Henry Jones</p>
+                    <p class="depoimento-user">
+                        "O nosso novo site superou todas as expetativas! A equipa captou 
+                        perfeitamente a essência da nossa marca e a experiência de 
+                        navegação para os clientes ficou impecável."
+                    </p>
+                    <div class="estrelas">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <!-- card item 2 -->
+                <div class="card-item">
+                    <img src="assets/pessoa_depoimento_dois.jpg" alt="pessoa do depoimento">
+                    <p class="nome-user">Renato Portugal</p>
+                    <p class="depoimento-user">
+                        "Profissionalismo e agilidade do início ao fim. O website ficou moderno, 
+                        rápido e responsivo, o que resultou num aumento direto nas nossas conversões."
+                    </p>
+                    <div class="estrelas">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <!-- card item 3 -->
+                <div class="card-item">
+                    <img src="assets/pessoa_depoimento_tres.jpg" alt="pessoa do depoimento">
+                    <p class="nome-user">Leila de Abreu</p>
+                    <p class="depoimento-user">
+                        "Excelente trabalho na reestruturação da nossa plataforma online. O suporte foi 
+                        fantástico e a entrega foi feita dentro do prazo combinado. Recomendo vivamente!"
+                    </p>
+                    <div class="estrelas">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- clientes -->
+    <section class="Clientes">
+        <div class="container">
+            <h3>Nossos clientes</h3>
+            <p>Prestamos serviços todo tipo de empresa ou projeto
+                , olhe alguns dos nossos clientes
+            </p>
+            <div>
+                <img src="assets/apple.png" alt="logo da apple">
+                <img src="assets/microsoft.png" alt="logo da microsoft">
+                <img src="assets/slack.png" alt="logo da slack">
+                <img src="assets/google.png" alt="logo da google">
+            </div>
+        </div>
+    </section>
+
+    <!-- Segurança -->
+    <section class="faca-mais">
+        <div class="container">
+            <div class="faca-mais-text">
+                <h3>Tenha um website seguro</h3>
+                <p>
+                    Trabalhamos com tecnologia atualizadas, rápidas e as mais seguras
+                    desse mercado. Nós fazemos backup e manutenção de todo o seu site.
+                </p>
+                <a href="contato.html" class="btn animate-btn">Entrar em contato.</a>
+            </div>
+            <div class="faca-mais-img">
+                <img src="assets/security.png" alt="imagem do négocio">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="links">
+                <a href="#"> <i class="fa fa-facebook"></i></a>
+                <a href="#"> <i class="fa fa-github"></i></a>
+                <a href="#"> <i class="fa fa-instagram"></i></a>
+                <a href="#"> <i class="fa fa-linkedin"></i></a>
+            </div>
+            <p> Desenvolvido por Filipe </p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,3 +1,35 @@
+// Valores booleanos
+let isSunny = true;
+let isWeekend = false;
+console.log("Está ensolarado?", isSunny);   // true
+console.log("É fim de semana?", isWeekend); // false
+if (isSunny && !isWeekend) {
+  console.log("Dia de trabalhar no sol!");
+}
+
+// Operadores lógicos (&& e ||)
+if (isWeekend && isSunny) {
+  console.log("Picnic day");
+}
+
+let isRaining = false;
+if (isRaining || isSunny) {
+  console.log("Lets go out");
+}
+
+// TRUTHY E FALSY
+if (42) {
+  console.log("This is truthy!"); // Executa
+}
+if (0) {
+  console.log("This is not going to work"); // Não executa pois 0 avalia como False
+}
+
+// Operador ternário(condicao ? verdadeiro : falso)
+let age = 15;
+let isAdult = age >= 12 ? true : false;
+console.log("isAdult:", isAdult); // true
+
 // Caixa de diálogo e entrada do usuário
 let nomeUsuario = window.prompt("Qual seu nome?");
 if (nomeUsuario) {
@@ -15,6 +47,16 @@ else if (idade >= 63) {
 else {
     alert("Você é jovem");
 }
+
+// Estruturas condicionais(If/else)
+let temp = 28;
+if (temp > 30) {
+  console.log("Its very hot");
+} 
+else {
+  console.log("Temperatura amena");
+}
+
 
 // Estrutura de escolha (switch)
 let estado = "SC";

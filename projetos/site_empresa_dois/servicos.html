@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonte awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Serviços da empresa</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header style="background-image: url('assets/background-servicos.jpg');">
+        <div class="container">
+            <nav>
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="Logo">
+                </a>
+                <ul class="ul">
+                    <a href="index.html">Home</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="servicos.html">Serviços</a>
+                    <a class="btn" href="contato.html">Contato</a>
+                    <div class="close-icon" onclick="closeMenu()">
+                        <i class="fa fa-times-circle"></i>
+                    </div>
+                </ul>
+                <div class="menu-icon" onclick="openMenu()">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </nav>
+            <section class="banner">
+                <div class="banner-text">
+                    <h1>Nossos serviços</h1>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <section class="servicos">
+        <div class="container">
+            <h3>Nossos serviços</h3>
+            <p>Conheça os nossos melhores serviços que temos para você</p>
+            <!-- row cards -->
+            <div class="rows-cards">
+                <!-- row card item 1-->
+                <div class="row-card-item">
+                    <img src="assets/cloud.png" alt="logo do cloud">
+                    <p class="nome-servico"><strong>Serviço em nuvem</strong></p>
+                    <p class="descricao-servico">Hospedagem segura e infraestrutura 
+                        em nuvem de alta performance para garantir que seu site 
+                        fique sempre online e rápido.
+                    </p>
+                </div>
+
+                <!-- row card item 2-->
+                <div class="row-card-item">
+                    <img src="assets/digital-marketing.png" alt="logo de marketing">
+                    <p class="nome-servico"><strong>Serviço em marketing</strong></p>
+                    <p class="descricao-servico">Estratégias personalizadas para atrair
+                        o público certo, aumentar o engajamento da sua marca e 
+                        gerar novos negócios.
+                    </p>
+                </div>
+
+                <!-- row card item 3-->
+                <div class="row-card-item">
+                    <img src="assets/seo.png" alt="logo do SEO">
+                    <p class="nome-servico"><strong>SEO</strong></p>
+                    <p class="descricao-servico">Otimização do seu site para os 
+                        motores de busca, garantindo as primeiras posições no 
+                        Google e tráfego orgânico qualificado
+                    </p>
+                </div>
+
+                <!-- row card item 4-->
+                <div class="row-card-item">
+                    <img src="assets/virtual_store.png" alt="logo da loja virtual">
+                    <p class="nome-servico"><strong>Criação de lojas virtuais</strong></p>
+                    <p class="descricao-servico">E-commerces completos, intuitivos e 
+                        seguros para você vender seus produtos na internet com a 
+                        melhor experiência de compra.
+                    </p>
+                </div>
+
+                <!-- row card item 5-->
+                <div class="row-card-item">
+                    <img src="assets/layer.png" alt="logo da identidade visual e design">
+                    <p class="nome-servico"><strong>Identidade visual & design</strong></p>
+                    <p class="descricao-servico">Criação de marcas marcantes e interfaces 
+                        modernas que transmitem profissionalismo, valor e a 
+                        essência do seu negócio.
+                    </p>
+                </div>
+
+                <!-- row card item 6-->
+                <div class="row-card-item">
+                    <img src="assets/manager.png" alt="logo da criação de conteúdo">
+                    <p class="nome-servico"><strong>Criação de conteúdo</strong></p>
+                    <p class="descricao-servico">Produção de textos e materiais relevantes 
+                        focados em engajar sua audiência, transmitir autoridade e 
+                        converter visitantes em clientes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Dados -->
+    <section class="dados">
+        <div class="container">
+            <!-- dados item 1-->
+            <div class="dados-item">
+                <img src="assets/cloud.png" alt="logo do cloud">
+                <p>
+                    <strong>+360</strong> <br>
+                    Projetos concluidos
+                </p>
+            </div>
+
+            <!-- dados item 2-->
+            <div class="dados-item">
+                <img src="assets/manager.png" alt="logo de gerente">
+                <p>
+                    <strong>+890</strong> <br>
+                    Clientes satisfeitos
+                </p>
+            </div>
+
+            <!-- dados item 3-->
+            <div class="dados-item">
+                <img src="assets/trophy.png" alt="logo de troféu">
+                <p>
+                    <strong>+4303</strong> <br>
+                    Jornada de trabalho
+                </p>
+            </div>
+
+            <!-- dados item 4-->
+            <div class="dados-item">
+                <img src="assets/layer.png" alt="logo de camada">
+                <p>
+                    <strong>+254</strong> <br>
+                    Publicidade paga
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="links">
+                <a href="#"> <i class="fa fa-facebook"></i></a>
+                <a href="#"> <i class="fa fa-github"></i></a>
+                <a href="#"> <i class="fa fa-instagram"></i></a>
+                <a href="#"> <i class="fa fa-linkedin"></i></a>
+            </div>
+            <p> Desenvolvido por Filipe </p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

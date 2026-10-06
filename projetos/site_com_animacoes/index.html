@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Site com animações</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Loja para Devs</div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Produtos</li>
+                <li>Contatos</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="tech-circle">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+
+        <div class="list">
+            <div class="item active" >
+                <div class="product-img">
+                    <img src="./assets/apple-watch.png" alt="Apple Watch">
+                </div>
+                <div class="content">
+                    <p class="product-tag">Novo lançamento</p>
+                    <p class="product-name">Apple Watch Series 10</p>
+                    <p class="description">Mais fino, leve e com uma tela OLED ampla
+                        surpreendente, o Apple Watch Series 10 eleva o acompanhamento de
+                        saúde e alta performance. Monitore seus treinos, acompanhe métricas
+                        vitais e mantenha-se conectado com a máxima eficiência no seu pulso.
+                    </p>
+                    <button class="btn">Saiba mais</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="product-img">
+                    <img src="./assets/air-pods.png" alt="Air-pods">
+                </div>
+                <div class="content">
+                    <p class="product-tag">Novo lançamento</p>
+                    <p class="product-name">Air pods</p>
+                    <p class="description">O Apple Vision Pro introduz a computação espacial
+                        no seu dia a dia, transformando qualquer ambiente numa tela
+                        infinita de trabalho e entretenimento com qualidade visual surpreendente.
+                    </p>
+                    <button class="btn">Saiba mais</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="product-img">
+                    <img src="./assets/vision-pro.png" alt="Vision-pro">
+                </div>
+                <div class="content">
+                    <p class="product-tag">Novo lançamento</p>
+                    <p class="product-name">Vision pro</p>
+                    <p class="description">Com áudio espacial de alta fidelidade e
+                        cancelamento ativo de ruído, os AirPods garantem uma imersão
+                        sonora completa com facilidade de ligação aos seus dispositivos
+                        Apple.
+                    </p>
+                    <button class="btn">Saiba mais</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="arrows">
+            <button class="arrow-btn" id="prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+                </svg>
+            </button>
+            <button class="arrow-btn" id="next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="indicators">
+            <div class="numbers">01</div>
+            <div class="dots">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
